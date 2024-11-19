@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App{
+    width :100%;
+    height:100%;
+}
+
+.outer-list{
+    background-color: aliceblue;
+    padding: 14px;
+}
+
+.inner-list{
+    display: flex;
+    justify-content: space-around;
+    width :100%;
+    min-height:100px;
+}
+
+.column-outer-list{
+    display: flex;
+    width: 30%;  
+    flex-direction: column; 
+    border-radius: 20px;  
+    background-color: #2d2d2d;  
+    padding: 16px;
+    min-height:500px;
+}
+
+.column-inner-list{
+    display: flex;
+    width:100%;  
+    flex-direction: column;  
+    border-radius: 10px;  
+    background-color: #2d2d2d;  
+    padding: 16px;  
+}
+
+.column-task-list{
+    display: flex; 
+    flex: 1 1 0%;  
+    flex-direction: column;  
+    gap: 16px;  
+}
+
+.task-box {
+    cursor: grab; 
+    padding: 1rem;  
+    display: flex;
+    flex-direction: column;
+    /* justify-content: start; */
+    align-items: start;
+    height: 100px;
+}
+
+.task-box:hover {
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    background-color: #004085;
+}
+
+.task-text {
+    font-weight: 500; 
+    color: #f1f1f1;  
+}
+
+.task-details {
+    margin-top: 0.5rem;  
+    font-size: 0.875rem; 
+    color: #9ca3af;  
+}
+
+/* Basic button styles */
+.button {
+    padding: 5px 8px;
+    font-size: 16px; 
+    font-weight: 200;
+    color: #fff;  
+    background-color: #007bff;
+    border: none;  
+    border-radius: 0.3rem;  
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);  
+}
+
+.button:active {
+    transform: scale(1); 
+    background-color: #004085;
+}
+
+.button-container{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2d2d2d15; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+  }
+  
+  .modal-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    max-width: 90%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+
+
+  .parent {
+    background-color: #004085;
+  }
+  .parent:hover {
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+
+     transform: scale(1.01);
+}
